@@ -1,0 +1,211 @@
+/* styles.css */
+
+/* Universal Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0d3b66, #fafafa);
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  max-width: 650px;
+  width: 100%;
+  background: linear-gradient(145deg, #ffffff, #dfe4ea);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  background: -webkit-linear-gradient(45deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+h2, h3 {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Input Fields and Select */
+input[type="text"], input[type="password"], select {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 2px solid #dfe4ea;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+  border-color: #0077cc;
+  box-shadow: 0 4px 12px rgba(0, 119, 204, 0.2);
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  background: linear-gradient(45deg, #0077cc, #0056b3);
+  color: #fff;
+  padding: 15px;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 91, 181, 0.2);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #003f7d);
+  box-shadow: 0 12px 20px rgba(0, 91, 181, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Error Message */
+.error {
+  color: #e74c3c;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Content Boxes */
+.track-details, .artist-details {
+  background: linear-gradient(145deg, #e6e9f0, #fff);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.track-details:hover, .artist-details:hover {
+  transform: scale(1.02);
+}
+
+.track-details h3, .artist-details h3 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.track-details p, .artist-details p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Audio Control Styling */
+audio {
+  margin-top: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* Image Styling */
+.artist-details img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+  color: #000000;
+  font-size: 15px;
+}
+.comment-section {
+  background: linear-gradient(145deg, #ffffff, #dfe4ea);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.comment-section h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+.comment-section button {
+  background: linear-gradient(135deg, #0077cc, #0056b3);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.comment-section button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7d);
+}
+
+.comment-section ul {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.comment-section li {
+  list-style-type: none;
+  background: #f9f9fb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
